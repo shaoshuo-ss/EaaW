@@ -1,7 +1,7 @@
 # Explanation as a Watermark (EaaW)
 
 ## Introduction
-This is the official implementation for our paper "[Explanation as a Watermark: Harmless and Multi-bit Model Ownership Verification via Watermarking Feature Attribution](https://arxiv.org/abs/2405.04825)". This paper is accepted by Network and Distributed System Security Symposium (NDSS) 2025. This project is developed on Python3 and Pytorch.
+This is the official implementation for our paper "[Explanation as a Watermark: Towards Harmless and Multi-bit Model Ownership Verification via Watermarking Feature Attribution](https://arxiv.org/abs/2405.04825)". This paper is accepted by Network and Distributed System Security Symposium (NDSS) 2025. This project is developed on Python3 and Pytorch.
 
 ## Getting Start
 

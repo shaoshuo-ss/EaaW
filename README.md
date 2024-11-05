@@ -53,7 +53,32 @@ The parameters are discribed below.
 
 ### Protecting Text Generation Models
 
-The code of applying EaaW to protect text generation models will soon be released.
+First, create a virtual environment using Anaconda.
+```
+conda create -n eaaw python=3.8
+conda activate eaaw
+```
+
+Second, you need to install the necessary packages to run EaaW, including pytorch, opencv-python, tqdm, piqa, and scipy.
+```
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+pip install tqdm
+pip install piqa
+pip install scipy
+pip install transformers==4.34.0
+pip install datasets==2.14.5
+pip install accelerate==0.23.0
+```
+After installing these packages, we need to prepare the model and dataset. Take GPT-2 and ptb-text-only dataset as example. We need to download the [model](https://huggingface.co/openai-community/gpt2) to `models/gpt2` and download the [dataset](https://huggingface.co/datasets/ptb-text-only/ptb_text_only) to `'data/ptb-text-only'`. Then, run the following bash file.
+```
+bash text-generation/scripts/gpt2.sh {gpus} {wm_length}
+```
+The parameters are discribed below.
+- `{gpus}`: The ids of the GPUs.
+- `{wm_length}`: The length of the embedded watermark, $e.g.$, 128.
+
+
+
 
 ## Citation Info
 
